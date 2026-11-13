@@ -1,0 +1,6 @@
+# Task 1 – Report notes
+
+Problem inputs: vehicle registration/type, user category/pass validity, entry and exit times, and slot configuration. Outputs: slot allocation, unique ticket, parking fee, occupancy and validation messages. Candidate classes: Vehicle (identity and fee behaviour), ParkingSlot (position and occupancy), ParkingFacility (allocation/release), ParkingTicket (entry record), User/Pass (eligibility), and ParkingService (use-case coordination). Rules: one vehicle per slot; no duplicate active registration; ticket IDs are unique; invalid positions are rejected; released slots become reusable. Assumptions must be stated, especially rates and billing boundaries. Objects keep related state together. Parallel arrays require matching indexes and synchronized updates. Searching registration is O(n) in either a simple object array or parallel arrays; adding an attribute to parallel arrays requires another array and synchronized maintenance, while an object model adds a field/accessor to Vehicle. Space is O(n) references plus object overhead for objects; parallel arrays store separate arrays and primitive/reference values.
+
+## Evidence to add
+Run the corresponding Java program in VS Code and save a genuine terminal screenshot in this folder. Add your actual observed output to the report after execution.

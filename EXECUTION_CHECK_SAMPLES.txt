@@ -1,0 +1,33 @@
+=== Task03/ParkingFacility ===
+compile exit: 0
+run exit: 0
+[0, 0]
+[0, 1]
+[1, 0]
+null
+true false false
+[0, 1]
+
+=== Task08/FeeDemo ===
+compile exit: 0
+run exit: 0
+TwoWheeler TN01A1 -> Rs 30.0
+Car TN02B2 -> Rs 90.0
+ElectricCar TN03C3 -> Rs 210.0
+true
+
+=== Task11/CampusParkingSystem ===
+compile exit: 0
+run exit: 0
+Tickets: 1001, 1002, 1003
+Two-wheeler fee (65 min): Rs 20.0
+Student monthly-pass fee (120 min): Rs 0.0
+EV parking fee (130 min): Rs 90.0
+Invalid exit handled: No active ticket for UNKNOWN
+
+=== Task12/ExtendedCampusParkingSystem ===
+compile exit: 0
+run exit: 0
+E-bike flat fee: Rs 20.0
+Delivery van fee: Rs 120.0
+Visitor one-day-pass fee: Rs 0.0

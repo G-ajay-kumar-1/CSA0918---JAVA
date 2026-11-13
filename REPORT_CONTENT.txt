@@ -1,0 +1,1 @@
+Report source and task explanations are included in CO1_Java_Assignment_Report.docx. Task-level detailed notes are in each TaskXX/TASK_NOTES.md folder.
