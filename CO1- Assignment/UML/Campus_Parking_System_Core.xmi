@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI verified="false" xmi.version="1.2" timestamp="2026-11-13T08:13:55" xmlns:UML="http://schema.omg.org/spec/UML/1.3">
+ <XMI.header>
+  <XMI.documentation>
+   <XMI.exporter>umbrello uml modeller http://umbrello.kde.org</XMI.exporter>
+   <XMI.exporterVersion>1.6.26</XMI.exporterVersion>
+   <XMI.exporterEncoding>UnicodeUTF8</XMI.exporterEncoding>
+  </XMI.documentation>
+  <XMI.metamodel xmi.version="1.3" href="UML.xml" xmi.name="UML"/>
+ </XMI.header>
+ <XMI.content>
+  <UML:Model isSpecification="false" isAbstract="false" isLeaf="false" xmi.id="m1" isRoot="false" name="UML Model">
+   <UML:Namespace.ownedElement>
+    <UML:Stereotype visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="folder" name="folder"/>
+    <UML:Stereotype visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="datatype" name="datatype"/>
+    <UML:Stereotype visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="interface" name="interface"/>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Logical View" name="Logical View">
+     <UML:Namespace.ownedElement>
+      <UML:Package stereotype="folder" visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Datatypes" name="Datatypes">
+       <UML:Namespace.ownedElement>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_String__" name="String[]"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_void" name="void"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_String" name="String"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_long" name="long"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_double" name="double"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_ParkingSlot__" name="ParkingSlot[]"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_int" name="int"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_boolean" name="boolean"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_LocalDateTime" name="LocalDateTime"/>
+       </UML:Namespace.ownedElement>
+      </UML:Package>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cls_campus" name="CampusParkingSystem">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_cls_campus_15967" type="cls_service" name="parkingService"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_campus_0" name="main">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_campus_0" type="dt_void"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_cls_campus_0_0" type="dt_String__" value="" name="args"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cls_vehicle" name="Vehicle">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_cls_vehicle_8604" type="dt_String" name="registrationNumber"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_vehicle_0" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_vehicle_0" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_cls_vehicle_0_0" type="dt_long" value="" name="minutes"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cls_service" name="ParkingService">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_cls_service_16057" type="cls_facility" name="facility"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_service_0" name="park">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_service_0" type="cls_ticket"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_cls_service_0_0" type="cls_vehicle" value="" name="vehicle"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_service_1" name="exit">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_service_1" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_cls_service_1_0" type="dt_String" value="" name="regNo"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cls_facility" name="ParkingFacility">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_cls_facility_8079" type="dt_ParkingSlot__" name="slots"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_facility_0" name="allocateSlot">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_facility_0" type="cls_slot"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_facility_1" name="releaseSlot">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_facility_1" type="dt_void"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_cls_facility_1_0" type="cls_slot" value="" name="slot"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cls_slot" name="ParkingSlot">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_cls_slot_39989" type="dt_int" name="slotNumber"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_cls_slot_9987" type="dt_boolean" name="occupied"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_slot_0" name="assign">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_slot_0" type="dt_void"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_cls_slot_0_0" type="cls_vehicle" value="" name="vehicle"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_slot_1" name="release">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_slot_1" type="dt_void"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cls_twowheeler" name="TwoWheeler">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_twowheeler_0" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_twowheeler_0" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_cls_twowheeler_0_0" type="dt_long" value="" name="minutes"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cls_car" name="Car">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_car_0" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_car_0" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_cls_car_0_0" type="dt_long" value="" name="minutes"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cls_ecar" name="ElectricCar">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_ecar_0" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_ecar_0" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_cls_ecar_0_0" type="dt_long" value="" name="minutes"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_ecar_1" name="chargingFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_ecar_1" type="dt_double"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cls_ticket" name="ParkingTicket">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_cls_ticket_38316" type="dt_int" name="ticketId"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_cls_ticket_5335" type="dt_LocalDateTime" name="entryTime"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_ticket_0" name="durationMinutes">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_ticket_0" type="dt_long"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_ticket_1" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_ticket_1" type="dt_double"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Interface visibility="public" isSpecification="false" namespace="Logical View" stereotype="interface" isAbstract="true" isLeaf="false" isRoot="false" xmi.id="cls_chargeable" name="Chargeable">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_cls_chargeable_0" name="chargingFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_cls_chargeable_0" type="dt_double"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Interface>
+      <UML:Dependency visibility="public" isSpecification="false" namespace="Logical View" supplier="cls_service" xmi.id="rel_uses_service" client="cls_campus" name="uses"/>
+      <UML:Association visibility="public" isSpecification="false" namespace="Logical View" xmi.id="rel_uses_facility" name="uses">
+       <UML:Association.connection>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="false" isSpecification="false" xmi.id="ae_rel_uses_facility_a" type="cls_service" name="" aggregation="none"/>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="ae_rel_uses_facility_b" type="cls_facility" name="" aggregation="none"/>
+       </UML:Association.connection>
+      </UML:Association>
+      <UML:Association visibility="public" isSpecification="false" namespace="Logical View" xmi.id="rel_contains_slot" name="contains">
+       <UML:Association.connection>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="ae_rel_contains_slot_a" type="cls_facility" name="" aggregation="composite"/>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="ae_rel_contains_slot_b" type="cls_slot" name="" aggregation="none"/>
+       </UML:Association.connection>
+      </UML:Association>
+      <UML:Dependency visibility="public" isSpecification="false" namespace="Logical View" supplier="cls_ticket" xmi.id="rel_creates_ticket" client="cls_service" name="creates"/>
+      <UML:Generalization discriminator="" visibility="public" isSpecification="false" namespace="Logical View" child="cls_twowheeler" xmi.id="rel_gen_two" parent="cls_vehicle" name=""/>
+      <UML:Generalization discriminator="" visibility="public" isSpecification="false" namespace="Logical View" child="cls_car" xmi.id="rel_gen_car" parent="cls_vehicle" name=""/>
+      <UML:Generalization discriminator="" visibility="public" isSpecification="false" namespace="Logical View" child="cls_ecar" xmi.id="rel_gen_ecar" parent="cls_car" name=""/>
+      <UML:Abstraction visibility="public" isSpecification="false" namespace="Logical View" supplier="cls_chargeable" xmi.id="rel_impl_chargeable" client="cls_ecar" name="implements"/>
+     </UML:Namespace.ownedElement>
+     <XMI.extension xmi.extender="umbrello">
+      <diagrams>
+       <diagram showopsig="1" linecolor="#000000" snapx="10" showattribassocs="0" snapy="10" linewidth="0" showattsig="1" showpubliconly="0" showpackage="0" showstereotype="1" name="Campus Parking System - Core Class Diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="640" canvaswidth="1240" localid="" snapcsgrid="0" showgrid="0" showops="1" usefillcolor="1" fillcolor="#ffffb0" zoom="100" xmi.id="diag_core" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
+        <widgets>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="55" showattsigs="601" showattributes="1" showstereotype="1" y="30" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="230" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_campus" showscope="1" height="85" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="685" showattsigs="601" showattributes="1" showstereotype="1" y="30" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="270" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_vehicle" showscope="1" height="85" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="30" showattsigs="601" showattributes="1" showstereotype="1" y="160" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="280" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_service" showscope="1" height="105" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="30" showattsigs="601" showattributes="1" showstereotype="1" y="310" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="280" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_facility" showscope="1" height="105" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="45" showattsigs="601" showattributes="1" showstereotype="1" y="460" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="250" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_slot" showscope="1" height="125" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="480" showattsigs="601" showattributes="1" showstereotype="1" y="180" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="210" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_twowheeler" showscope="1" height="65" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="715" showattsigs="601" showattributes="1" showstereotype="1" y="180" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="210" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_car" showscope="1" height="65" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="685" showattsigs="601" showattributes="1" showstereotype="1" y="290" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="270" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_ecar" showscope="1" height="85" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="380" showattsigs="601" showattributes="1" showstereotype="1" y="310" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="230" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_ticket" showscope="1" height="125" showopsigs="601"/>
+         <interfacewidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="1000" showstereotype="1" y="290" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="190" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="cls_chargeable" showscope="1" height="85" showopsigs="601"/>
+        </widgets>
+        <messages/>
+        <associations>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="cls_campus" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="rel_uses_service" widgetbid="cls_service" totalcountb="1" type="502" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="170" starty="115"/>
+           <endpoint endx="170" endy="160"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="174" showstereotype="1" y="123" text="uses" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="40" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_rel_uses_service_name" height="18"/>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="cls_service" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="rel_uses_facility" widgetbid="cls_facility" totalcountb="1" type="512" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="170" starty="265"/>
+           <endpoint endx="170" endy="310"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="174" showstereotype="1" y="273" text="uses" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="40" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_rel_uses_facility_name" height="18"/>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="cls_facility" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="rel_contains_slot" widgetbid="cls_slot" totalcountb="1" type="510" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="170" starty="415"/>
+           <endpoint endx="170" endy="460"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="174" showstereotype="1" y="423" text="contains" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="64" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_rel_contains_slot_name" height="18"/>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="176" showstereotype="1" y="417" text="1" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="701" width="40" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_rel_contains_slot_ma" height="18"/>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="cls_service" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="rel_creates_ticket" widgetbid="cls_ticket" totalcountb="1" type="502" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="310" starty="212"/>
+           <endpoint endx="380" endy="372"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="349" showstereotype="1" y="278" text="creates" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="57" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_rel_creates_ticket_name" height="18"/>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="cls_twowheeler" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="rel_gen_two" widgetbid="cls_vehicle" totalcountb="1" type="500" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="585" starty="180"/>
+           <endpoint endx="820" endy="115"/>
+          </linepath>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="cls_car" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="rel_gen_car" widgetbid="cls_vehicle" totalcountb="1" type="500" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="820" starty="180"/>
+           <endpoint endx="820" endy="115"/>
+          </linepath>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="cls_ecar" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="rel_gen_ecar" widgetbid="cls_car" totalcountb="1" type="500" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="820" starty="290"/>
+           <endpoint endx="820" endy="245"/>
+          </linepath>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="cls_ecar" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="rel_impl_chargeable" widgetbid="cls_chargeable" totalcountb="1" type="511" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="955" starty="332"/>
+           <endpoint endx="1000" endy="332"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="981" showstereotype="1" y="318" text="implements" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="78" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_rel_impl_chargeable_name" height="18"/>
+         </assocwidget>
+        </associations>
+       </diagram>
+      </diagrams>
+     </XMI.extension>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Use Case View" name="Use Case View">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Component View" name="Component View">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Deployment View" name="Deployment View">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Entity Relationship Model" name="Entity Relationship Model">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+   </UML:Namespace.ownedElement>
+  </UML:Model>
+ </XMI.content>
+ <XMI.extensions xmi.extender="umbrello">
+  <docsettings viewid="diag_core" uniqueid="zz999" documentation=""/>
+  <listview>
+   <listitem open="1" type="800" id="Views">
+    <listitem open="1" type="801" id="Logical View">
+     <listitem open="1" type="807" id="diag_core" label="Campus Parking System - Core Class Diagram"/>
+     <listitem open="1" type="813" id="Datatypes"/>
+     <listitem open="1" type="901" id="cls_campus" label="CampusParkingSystem"/>
+     <listitem open="1" type="901" id="cls_vehicle" label="Vehicle"/>
+     <listitem open="1" type="901" id="cls_service" label="ParkingService"/>
+     <listitem open="1" type="901" id="cls_facility" label="ParkingFacility"/>
+     <listitem open="1" type="901" id="cls_slot" label="ParkingSlot"/>
+     <listitem open="1" type="901" id="cls_twowheeler" label="TwoWheeler"/>
+     <listitem open="1" type="901" id="cls_car" label="Car"/>
+     <listitem open="1" type="901" id="cls_ecar" label="ElectricCar"/>
+     <listitem open="1" type="901" id="cls_ticket" label="ParkingTicket"/>
+     <listitem open="1" type="903" id="cls_chargeable" label="Chargeable"/>
+    </listitem>
+    <listitem open="1" type="802" id="Use Case View"/>
+    <listitem open="1" type="822" id="Component View"/>
+    <listitem open="1" type="821" id="Deployment View"/>
+    <listitem open="1" type="819" id="Entity Relationship Model"/>
+   </listitem>
+  </listview>
+  <codegeneration>
+   <codegenerator language="C++"/>
+  </codegeneration>
+ </XMI.extensions>
+</XMI>

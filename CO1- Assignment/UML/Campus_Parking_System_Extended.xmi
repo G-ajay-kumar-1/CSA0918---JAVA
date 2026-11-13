@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI verified="false" xmi.version="1.2" timestamp="2026-11-13T08:13:55" xmlns:UML="http://schema.omg.org/spec/UML/1.3">
+ <XMI.header>
+  <XMI.documentation>
+   <XMI.exporter>umbrello uml modeller http://umbrello.kde.org</XMI.exporter>
+   <XMI.exporterVersion>1.6.26</XMI.exporterVersion>
+   <XMI.exporterEncoding>UnicodeUTF8</XMI.exporterEncoding>
+  </XMI.documentation>
+  <XMI.metamodel xmi.version="1.3" href="UML.xml" xmi.name="UML"/>
+ </XMI.header>
+ <XMI.content>
+  <UML:Model isSpecification="false" isAbstract="false" isLeaf="false" xmi.id="m1" isRoot="false" name="UML Model">
+   <UML:Namespace.ownedElement>
+    <UML:Stereotype visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="folder" name="folder"/>
+    <UML:Stereotype visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="datatype" name="datatype"/>
+    <UML:Stereotype visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="interface" name="interface"/>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Logical View" name="Logical View">
+     <UML:Namespace.ownedElement>
+      <UML:Package stereotype="folder" visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Datatypes" name="Datatypes">
+       <UML:Namespace.ownedElement>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_String__" name="String[]"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_void" name="void"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_String" name="String"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_long" name="long"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_double" name="double"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_ParkingSlot____" name="ParkingSlot[][]"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_int" name="int"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_LocalDate" name="LocalDate"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_boolean" name="boolean"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="dt_LocalDateTime" name="LocalDateTime"/>
+       </UML:Namespace.ownedElement>
+      </UML:Package>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_campus" name="ExtendedCampusParkingSystem">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_ext_campus_15967" type="ext_service" name="parkingService"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_campus_0" name="main">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_campus_0" type="dt_void"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_campus_0_0" type="dt_String__" value="" name="args"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_vehicle" name="Vehicle">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_ext_vehicle_8604" type="dt_String" name="registrationNumber"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_vehicle_0" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_vehicle_0" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_vehicle_0_0" type="dt_long" value="" name="minutes"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_service" name="ParkingService">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_ext_service_16057" type="ext_facility" name="facility"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_service_0" name="park">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_service_0" type="ext_ticket"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_service_0_0" type="ext_vehicle" value="" name="vehicle"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_service_1" name="exit">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_service_1" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_service_1_0" type="dt_String" value="" name="regNo"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_facility" name="ParkingFacility">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_ext_facility_60897" type="dt_ParkingSlot____" name="floors"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_facility_0" name="allocateSlot">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_facility_0" type="ext_slot"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_facility_1" name="releaseSlot">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_facility_1" type="dt_void"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_facility_1_0" type="ext_slot" value="" name="slot"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_slot" name="ParkingSlot">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_ext_slot_57541" type="dt_int" name="floorNumber"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_ext_slot_39989" type="dt_int" name="slotNumber"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_slot_0" name="assign">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_slot_0" type="dt_void"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_slot_0_0" type="ext_vehicle" value="" name="vehicle"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_slot_1" name="release">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_slot_1" type="dt_void"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_car" name="Car">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_car_0" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_car_0" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_car_0_0" type="dt_long" value="" name="minutes"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_ebike" name="ElectricBike">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_ebike_0" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_ebike_0" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_ebike_0_0" type="dt_long" value="" name="minutes"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_van" name="DeliveryVan">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_van_0" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_van_0" type="dt_double"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_van_0_0" type="dt_long" value="" name="minutes"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_pass_day" name="OneDayPass">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_ext_pass_day_36758" type="dt_LocalDate" name="validDate"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_pass_day_0" name="isValid">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_pass_day_0" type="dt_boolean"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_pass_day_0_0" type="dt_LocalDate" value="" name="date"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ext_ticket" name="ParkingTicket">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_ext_ticket_38316" type="dt_int" name="ticketId"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="a_ext_ticket_5335" type="dt_LocalDateTime" name="entryTime"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_ticket_0" name="durationMinutes">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_ticket_0" type="dt_long"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_ticket_1" name="calculateFee">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_ticket_1" type="dt_double"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Interface visibility="public" isSpecification="false" namespace="Logical View" stereotype="interface" isAbstract="true" isLeaf="false" isRoot="false" xmi.id="ext_pass" name="Pass">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="o_ext_pass_0" name="isValid">
+%s   <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" isSpecification="false" xmi.id="r_ext_pass_0" type="dt_boolean"/>
+          <UML:Parameter kind="in" visibility="private" isSpecification="false" xmi.id="p_ext_pass_0_0" type="dt_LocalDate" value="" name="date"/>
+%s   </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Interface>
+      <UML:Dependency visibility="public" isSpecification="false" namespace="Logical View" supplier="ext_service" xmi.id="ext_uses_service" client="ext_campus" name="uses"/>
+      <UML:Association visibility="public" isSpecification="false" namespace="Logical View" xmi.id="ext_uses_facility" name="uses">
+       <UML:Association.connection>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="false" isSpecification="false" xmi.id="ae_ext_uses_facility_a" type="ext_service" name="" aggregation="none"/>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="ae_ext_uses_facility_b" type="ext_facility" name="" aggregation="none"/>
+       </UML:Association.connection>
+      </UML:Association>
+      <UML:Association visibility="public" isSpecification="false" namespace="Logical View" xmi.id="ext_contains_slot" name="contains">
+       <UML:Association.connection>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="ae_ext_contains_slot_a" type="ext_facility" name="" aggregation="composite"/>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="ae_ext_contains_slot_b" type="ext_slot" name="" aggregation="none"/>
+       </UML:Association.connection>
+      </UML:Association>
+      <UML:Dependency visibility="public" isSpecification="false" namespace="Logical View" supplier="ext_ticket" xmi.id="ext_creates_ticket" client="ext_service" name="creates"/>
+      <UML:Generalization discriminator="" visibility="public" isSpecification="false" namespace="Logical View" child="ext_car" xmi.id="ext_gen_car" parent="ext_vehicle" name=""/>
+      <UML:Generalization discriminator="" visibility="public" isSpecification="false" namespace="Logical View" child="ext_ebike" xmi.id="ext_gen_ebike" parent="ext_vehicle" name=""/>
+      <UML:Generalization discriminator="" visibility="public" isSpecification="false" namespace="Logical View" child="ext_van" xmi.id="ext_gen_van" parent="ext_vehicle" name=""/>
+      <UML:Abstraction visibility="public" isSpecification="false" namespace="Logical View" supplier="ext_pass" xmi.id="ext_impl_pass" client="ext_pass_day" name="implements"/>
+      <UML:Dependency visibility="public" isSpecification="false" namespace="Logical View" supplier="ext_pass_day" xmi.id="ext_validates_pass" client="ext_facility" name="validates"/>
+     </UML:Namespace.ownedElement>
+     <XMI.extension xmi.extender="umbrello">
+      <diagrams>
+       <diagram showopsig="1" linecolor="#000000" snapx="10" showattribassocs="0" snapy="10" linewidth="0" showattsig="1" showpubliconly="0" showpackage="0" showstereotype="1" name="Extended Campus Parking System - Class Diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="640" canvaswidth="1360" localid="" snapcsgrid="0" showgrid="0" showops="1" usefillcolor="1" fillcolor="#ffffb0" zoom="100" xmi.id="diag_ext" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
+        <widgets>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="35" showattsigs="601" showattributes="1" showstereotype="1" y="30" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="290" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_campus" showscope="1" height="85" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="755" showattsigs="601" showattributes="1" showstereotype="1" y="30" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="270" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_vehicle" showscope="1" height="85" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="40" showattsigs="601" showattributes="1" showstereotype="1" y="160" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="280" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_service" showscope="1" height="105" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="40" showattsigs="601" showattributes="1" showstereotype="1" y="310" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="280" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_facility" showscope="1" height="105" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="55" showattsigs="601" showattributes="1" showstereotype="1" y="460" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="250" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_slot" showscope="1" height="125" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="470" showattsigs="601" showattributes="1" showstereotype="1" y="180" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="260" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_car" showscope="1" height="65" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="760" showattsigs="601" showattributes="1" showstereotype="1" y="180" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="260" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_ebike" showscope="1" height="65" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="1050" showattsigs="601" showattributes="1" showstereotype="1" y="180" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="260" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_van" showscope="1" height="65" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="390" showattsigs="601" showattributes="1" showstereotype="1" y="460" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="280" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_pass_day" showscope="1" height="85" showopsigs="601"/>
+         <classwidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="390" showattsigs="601" showattributes="1" showstereotype="1" y="310" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="230" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_ticket" showscope="1" height="125" showopsigs="601"/>
+         <interfacewidget linecolor="#000000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="0" x="710" showstereotype="1" y="460" font="Sans Serif,9,-1,5,50,0,0,0,0,0" drawascircle="0" width="280" isinstance="0" usefillcolor="1" fillcolor="#ffffb0" xmi.id="ext_pass" showscope="1" height="85" showopsigs="601"/>
+        </widgets>
+        <messages/>
+        <associations>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="ext_campus" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="ext_uses_service" widgetbid="ext_service" totalcountb="1" type="502" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="180" starty="115"/>
+           <endpoint endx="180" endy="160"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="184" showstereotype="1" y="123" text="uses" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="40" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_ext_uses_service_name" height="18"/>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="ext_service" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="ext_uses_facility" widgetbid="ext_facility" totalcountb="1" type="512" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="180" starty="265"/>
+           <endpoint endx="180" endy="310"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="184" showstereotype="1" y="273" text="uses" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="40" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_ext_uses_facility_name" height="18"/>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="ext_facility" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="ext_contains_slot" widgetbid="ext_slot" totalcountb="1" type="510" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="180" starty="415"/>
+           <endpoint endx="180" endy="460"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="184" showstereotype="1" y="423" text="contains" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="64" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_ext_contains_slot_name" height="18"/>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="186" showstereotype="1" y="417" text="1" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="701" width="40" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_ext_contains_slot_ma" height="18"/>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="ext_service" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="ext_creates_ticket" widgetbid="ext_ticket" totalcountb="1" type="502" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="320" starty="212"/>
+           <endpoint endx="390" endy="372"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="359" showstereotype="1" y="278" text="creates" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="57" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_ext_creates_ticket_name" height="18"/>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="ext_car" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="ext_gen_car" widgetbid="ext_vehicle" totalcountb="1" type="500" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="600" starty="180"/>
+           <endpoint endx="890" endy="115"/>
+          </linepath>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="ext_ebike" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="ext_gen_ebike" widgetbid="ext_vehicle" totalcountb="1" type="500" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="890" starty="180"/>
+           <endpoint endx="890" endy="115"/>
+          </linepath>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="ext_van" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="ext_gen_van" widgetbid="ext_vehicle" totalcountb="1" type="500" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="1180" starty="180"/>
+           <endpoint endx="890" endy="115"/>
+          </linepath>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="ext_pass_day" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="ext_impl_pass" widgetbid="ext_pass" totalcountb="1" type="511" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="670" starty="502"/>
+           <endpoint endx="710" endy="502"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="694" showstereotype="1" y="488" text="implements" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="78" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_ext_impl_pass_name" height="18"/>
+         </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="ext_facility" usesdiagramfillcolor="0" fillcolor="#ffff00" linecolor="#000000" totalcounta="1" xmi.id="ext_validates_pass" widgetbid="ext_pass_day" totalcountb="1" type="502" textcolor="#000000" usefillcolor="1" linewidth="0">
+          <linepath layout="Direct">
+           <startpoint startx="320" starty="415"/>
+           <endpoint endx="395" endy="460"/>
+          </linepath>
+          <floatingtext linecolor="none" usesdiagramfillcolor="1" linewidth="0" usesdiagramusefillcolor="1" x="361" showstereotype="1" y="423" text="validates" font="Sans Serif,9,-1,5,50,0,0,0,0,0" pretext="" role="703" width="71" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="ft_ext_validates_pass_name" height="18"/>
+         </assocwidget>
+        </associations>
+       </diagram>
+      </diagrams>
+     </XMI.extension>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Use Case View" name="Use Case View">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Component View" name="Component View">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Deployment View" name="Deployment View">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Entity Relationship Model" name="Entity Relationship Model">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+   </UML:Namespace.ownedElement>
+  </UML:Model>
+ </XMI.content>
+ <XMI.extensions xmi.extender="umbrello">
+  <docsettings viewid="diag_ext" uniqueid="zz999" documentation=""/>
+  <listview>
+   <listitem open="1" type="800" id="Views">
+    <listitem open="1" type="801" id="Logical View">
+     <listitem open="1" type="807" id="diag_ext" label="Extended Campus Parking System - Class Diagram"/>
+     <listitem open="1" type="813" id="Datatypes"/>
+     <listitem open="1" type="901" id="ext_campus" label="ExtendedCampusParkingSystem"/>
+     <listitem open="1" type="901" id="ext_vehicle" label="Vehicle"/>
+     <listitem open="1" type="901" id="ext_service" label="ParkingService"/>
+     <listitem open="1" type="901" id="ext_facility" label="ParkingFacility"/>
+     <listitem open="1" type="901" id="ext_slot" label="ParkingSlot"/>
+     <listitem open="1" type="901" id="ext_car" label="Car"/>
+     <listitem open="1" type="901" id="ext_ebike" label="ElectricBike"/>
+     <listitem open="1" type="901" id="ext_van" label="DeliveryVan"/>
+     <listitem open="1" type="901" id="ext_pass_day" label="OneDayPass"/>
+     <listitem open="1" type="901" id="ext_ticket" label="ParkingTicket"/>
+     <listitem open="1" type="903" id="ext_pass" label="Pass"/>
+    </listitem>
+    <listitem open="1" type="802" id="Use Case View"/>
+    <listitem open="1" type="822" id="Component View"/>
+    <listitem open="1" type="821" id="Deployment View"/>
+    <listitem open="1" type="819" id="Entity Relationship Model"/>
+   </listitem>
+  </listview>
+  <codegeneration>
+   <codegenerator language="C++"/>
+  </codegeneration>
+ </XMI.extensions>
+</XMI>
