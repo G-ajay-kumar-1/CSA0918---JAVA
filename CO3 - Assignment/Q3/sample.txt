@@ -1,0 +1,1 @@
+This is a sample input file.\nTry-with-resources closes the reader automatically.\n
